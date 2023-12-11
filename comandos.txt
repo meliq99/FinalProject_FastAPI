@@ -1,0 +1,9 @@
+// para correr el servidor 
+
+uvicorn main:app --port 5000 --reload
+
+//inicializar redis 
+redis-server
+
+// Generar la llave secreta
+openssl rand -hex 32
